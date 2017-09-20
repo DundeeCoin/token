@@ -10,7 +10,7 @@ import "./MintableToken.sol";
  * Note they can later distribute these tokens as they wish using `transfer` and other
  * `StandardToken` functions.
  */
-contract SimpleToken is MintableToken {
+contract DundeeCoin is MintableToken {
 
   string public name = "Dundee Coin";
   string public symbol = "DDC";
@@ -20,7 +20,7 @@ contract SimpleToken is MintableToken {
   /**
    * @dev Contructor that gives msg.sender all of existing tokens. 
    */
-  function SimpleToken() {
+  function DundeeCoin() {
     totalSupply = INITIAL_SUPPLY;
     balances[msg.sender] = INITIAL_SUPPLY;
   }
